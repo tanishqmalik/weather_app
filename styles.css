@@ -138,7 +138,7 @@ body{
     border:0;
     color:white;
     margin-right: 150px;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .box1:hover{
     transform: scale(1.1);
@@ -169,7 +169,7 @@ body{
     border-radius: 10px;
     border:0;
     color:white;
-    transition: transform 0.1s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 .box2:hover{
     transform: scale(1.1);
