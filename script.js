@@ -51,16 +51,16 @@ async function checkWeather(cityName){
 }
 
 
-// function input4checkweather(){
-//     const search1= document.getElementById('searchinput')
-//     search1.addEventListener("keypress", (e)=>{
-//         let input=search1.value;
-//         checkWeather(input);
-//     })
-// }
+function input4checkweather(){
+    const search1= document.getElementById('searchinput')
+    search1.addEventListener("keypress", (e)=>{
+        let input=search1.value;
+        checkWeather(input);
+    })
+}
 
-// input4checkweather();
+input4checkweather();
 
-checkWeather('london')
+// checkWeather('london')
 
 
