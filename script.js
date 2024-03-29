@@ -28,16 +28,39 @@ async function checkWeather(cityName){
 
     windspeed1=Math.floor(windspeed)
     document.querySelector(".pwh1").innerHTML=windspeed1+"Km/h"
+
+
+    const videochange = document.getElementById("headerVideo")
+
+
+    if(data.weather[0].main=='Clouds'){
+        videochange.src="images/Clouds.mp4"
+    }
+    else if(data.weather[0].main=='Rain'){
+        videochange.src="images/Rain.mp4"
+    }
+    else if(data.weather[0].main=='Clear'){
+        videochange.src="images/Clear.mp4"
+    }
+    else if(data.weather[0].main=='Drizzle'){
+        videochange.src="images/Drizzle.mp4"
+    }
+    else if(data.weather[0].main=='Mist'){
+        videochange.src="images/Mist.mp4"
+    }
 }
 
 
-function input4checkweather(){
-    const search1= document.getElementById('searchinput')
-    search1.addEventListener("keypress", (e)=>{
-        let input=search1.value;
+// function input4checkweather(){
+//     const search1= document.getElementById('searchinput')
+//     search1.addEventListener("keypress", (e)=>{
+//         let input=search1.value;
+//         checkWeather(input);
+//     })
+// }
 
-        checkWeather(input);
-    })
-}
+// input4checkweather();
 
-input4checkweather();
+checkWeather('london')
+
+
