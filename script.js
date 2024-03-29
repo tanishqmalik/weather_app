@@ -1,3 +1,5 @@
+
+
 const apiKey = "703c143b1efd5b4af08902750af42806"
 // const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid"
 // const apiUrl = "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid"
@@ -28,4 +30,14 @@ async function checkWeather(cityName){
     document.querySelector(".pwh1").innerHTML=windspeed1+"Km/h"
 }
 
-checkWeather("patiala");
+
+function input4checkweather(){
+    const search1= document.getElementById('searchinput')
+    search1.addEventListener("keypress", (e)=>{
+        let input=search1.value;
+
+        checkWeather(input);
+    })
+}
+
+input4checkweather();
